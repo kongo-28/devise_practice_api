@@ -51,3 +51,5 @@ gem "devise-i18n"
 gem "devise_token_auth"
 
 gem "letter_opener_web"
+
+gem "active_model_serializers"
