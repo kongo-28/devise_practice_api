@@ -2,6 +2,7 @@ class Api::V1::HomeController < ApplicationController
   before_action :authenticate_api_v1_user!
 
   def index
-    render json: { message: 'hello' }
+    @user = current_api_v1_user
+    render json: @user
   end
 end
